@@ -76,6 +76,6 @@ The automation:
 - UiPath workflow structure: The main sequence orchestrates the invocation of login sequence, client testing sequence, and project testing sequence workflows.
 
 To use this automation project, ensure you have:
-- UiPath Studio: Ensure you have UiPath Studio installed.
+- UiPath Studio: UiPath Studio needs to installed.
 - Excel File: The NWU Tech Trends Data Excel file should be downloaded. Ensure it is accessible to the robot.
 - Web Application Access: The robot requires credentials and URL for the web application to perform operations.
