@@ -58,3 +58,24 @@ This project is an ASP.NET Core Web App that uses Model, View, and Control (MVC)
 A repository pattern is used to separate data access logic from the ProjectsController and ClientController classes by moving it into a ProjectRepository and ClientRepository respectively. This change makes the controller classes more focused on handling HTTP requests and responses, and the repository classes managing all database operations; it interacts directly with the TechtrendsContext to perform CRUD operations. The ProjectsController and ClientsController classes will then use the ProjectRepository and ClientRepository classes respectively to handle data operations.
 
 The benefits of using a repository pattern is that it removes the need to recreate controller methods every time logic changes. By moving data access logic to the repository, it makes the controller class cleaner and more focused on request handling, as they are entrypoints into the application. Centralising data access logic in the repository simplifies changes and testing of data operations. Reusability is also promoted as repository methods can be reused across different parts of the application, reducing code redundancy.
+
+PROJECT 4
+
+NWU Tech Trends UiPath Automation
+
+RPA UiPath Automation for UAT
+
+This project is a RPA (Robotic Process Automation) solution developed using UiPath Studio (Community Edition) [2024.10.4]. The robot performs User Acceptance Testing (UAT) by automating the process of reading input data from the NWU Tech Trends Data input Excel file (clients and projects records), writing the input data onto a data table, interacting with a web application by logging in, creating and deleting the clients and projects records, and updating the input Excel file based on the results of the operations executed.
+
+The automation:
+- Reads data from Excel: Extracts input data from the NWU Tech Trends Data Excel file.
+- Writes data onto a data table in UiPath Studio: Extracted Excel data is written onto a datable, respective to the clients sheet and projects sheet.
+- Navigates to URL: For each record in the data table, navigates to the web application URL in the browser that allows for logging in and performing CRUD operations from the data read.
+- Update Test Results: Writes the results of each operation (True or False) back to the NWU Tech Trends Data Excel file to indicate if it passed or failed testing.
+
+- UiPath workflow structure: The main sequence orchestrates the invocation of login sequence, client testing sequence, and project testing sequence workflows.
+
+To use this automation project, ensure you have:
+- UiPath Studio: Ensure you have UiPath Studio installed.
+- Excel File: The NWU Tech Trends Data Excel file should be downloaded. Ensure it is accessible to the robot.
+- Web Application Access: The robot requires credentials and URL for the web application to perform operations.
