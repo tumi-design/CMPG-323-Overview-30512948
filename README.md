@@ -70,7 +70,7 @@ This project is a RPA (Robotic Process Automation) solution developed using UiPa
 The automation:
 - Reads data from Excel: Extracts input data from the NWU Tech Trends Data Excel file.
 - Writes data onto a data table in UiPath Studio: Extracted Excel data is written onto a datable, respective to the clients sheet and projects sheet.
-- Navigates to URL: For each record in the data table, navigates to the web application URL in the browser that allows for logging in and performing CRUD operations from the data read.
+- Navigates to URL: For each record in the data table, navigates to the web application URL in the browser that allows for logging in and performing all CRUD (create, read, edit/ update, delete) operations from the data read.
 - Update Test Results: Writes the results of each operation (True or False) back to the NWU Tech Trends Data Excel file to indicate if it passed or failed testing.
 
 - UiPath workflow structure: The main sequence orchestrates the invocation of login sequence, client testing sequence, and project testing sequence workflows.
